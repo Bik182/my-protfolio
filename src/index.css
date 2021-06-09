@@ -1,10 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&display=swap");
 @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
 @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&display=swap");
 
 .cursive {
-  font-family: "B612 Mono", cursive;
+  font-family: "B612 Mono";
   font-weight: 700;
+}
+.description{
+  font-family: "B612 Mono";
+  font-weight: 700;
+  color:#7bd3ff;
+  font-size: 25px;
+
+}
+.email{
+  font-family: "B612 Mono";
+  font-weight: 700;
+  color:#36bafc;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.bottomHeader{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .project {
   align-items: center;
@@ -12,7 +32,11 @@
   flex-direction: column;
   flex: 1;
 }
-
+.TODO{
+  font-family: "B612 Mono";
+  font-weight: 400;
+  font-size: 50px;
+}
 .prose img {
   margin-left: auto;
   margin-right: auto;
@@ -49,6 +73,13 @@
   display: block;
   padding: 2em;
   overflow: hidden;
+}
+.me {
+  max-width: 100%;
+  height: auto;
+  width: 20%;
+  display: block;
+ 
 }
 .gifProject {
   transition: transform 0.5s ease;

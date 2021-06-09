@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Carousel from "react-bootstrap/Carousel";
 import instagramArt from "../media/instagram_art.png";
 import firstProj from "../media/shophitly.gif";
 import secondProj from "../media/covid_tracker.gif";
