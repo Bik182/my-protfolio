@@ -11,7 +11,6 @@ export default function NavBar(props) {
   let logoMultipler = (1920 / props.screenWidth) * headerMaxImageWidth + "%";
   let buttonMultipler = buttonMaxWidth;
 
-  //test
 
   return (
     <div className="navBarHeader">
