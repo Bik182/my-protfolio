@@ -7,23 +7,22 @@
   font-family: "B612 Mono";
   font-weight: 700;
 }
-.description{
+.description {
   font-family: "B612 Mono";
   font-weight: 700;
-  color:#7bd3ff;
-  font-size: 25px;
-
+  color: #7bd3ff;
 }
-.email{
+.email {
   font-family: "B612 Mono";
   font-weight: 700;
-  color:#ffb246;
-  font-size: 1.6em;
+  color: #ffb246;
+
   text-decoration: none;
 }
-.bottomHeader{
+.bottomHeader {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 .project {
@@ -32,10 +31,9 @@
   flex-direction: column;
   flex: 1;
 }
-.TODO{
+.TODO {
   font-family: "B612 Mono";
   font-weight: 400;
-  font-size: 50px;
 }
 .prose img {
   margin-left: auto;
@@ -75,11 +73,12 @@
   overflow: hidden;
 }
 .me {
-  max-width: 100%;
-  height: auto;
-  width: 20%;
   display: block;
- 
+  margin-bottom: 15px;
+}
+.image-div{
+  display: flex;
+  justify-content: center;
 }
 .gifProject {
   transition: transform 0.5s ease;
@@ -105,25 +104,31 @@
 .artShowcase:hover {
   transform: scale(1.1);
 }
-
-.socialImage {
+.social-button {
+  margin-right: 10px;
+}
+.social-image {
   /* border-width: 1px;
   border-color: rgb(132, 0, 255); */
-  width: 100%;
-  height: auto;
+
   display: flex;
   flex: 1;
 }
-.projectShowcase {
+.project-showcase-big {
   display: flex;
   flex: 1;
   flex-direction: row;
   padding-top: 5em;
   justify-content: space-evenly;
 }
-.socialContainer {
-  /* border-width: 1px;
-  border-color: rgb(0, 255, 42); */
+.project-showcase-small {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 5em;
+  justify-content: space-evenly;
+}
+.social-container {
   flex-direction: row;
   display: flex;
 }
