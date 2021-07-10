@@ -11,6 +11,7 @@
   font-family: "B612 Mono";
   font-weight: 700;
   color: #7bd3ff;
+  text-align: center;
 }
 .email {
   font-family: "B612 Mono";
@@ -34,17 +35,42 @@
 .TODO {
   font-family: "B612 Mono";
   font-weight: 400;
+  text-align: center;
+
 }
 .prose img {
   margin-left: auto;
   margin-right: auto;
   border-radius: 1px;
 }
+.gif-logo{
+  /* align-self: center; */
+ 
+  
+  border-bottom-width: .25em;
+  border-color: red;
+}
+.gif-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gif-logo {
+  transition: transform 0.5s ease;
+}
 
+.gif-logo:hover {
+  transform: scale(1.1);
+}
 .home-name {
   font-size: 150px;
 }
-
+.gif-logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+}
 .img {
   border: 1px solid #ddd;
   border-radius: 4px;
