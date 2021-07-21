@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CarouselProjects from "./CarouselProjects";
 import Slider from "react-slick";
-import myPicture from "../media/me.jpg";
+import myPicture from "../media/bikal.png";
 import NavBar from "./NavBar";
 import biksGifsLogo from "../media/logo-red.png";
 
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="homeHeader">
         <div>
           <div className="gif-logo-container">
-            <a class="gif-link" target="_blank" href="https://biksgifs.com/">
+            <a className="gif-link" target="_blank" href="https://biksgifs.com/">
               <img
                 style={{ width: logoMultipler, height: logoMultipler }}
                 className="gif-logo"

@@ -6,21 +6,19 @@ import secondProj from "../media/covid_tracker.gif";
 
 //var imgAtt = "d-block w-50% ";
 export default function CarouselProjects(props) {
-  
   let showCaseClass = "project-showcase-big";
 
   if (props.screenWidth < 1000) {
     showCaseClass = "project-showcase-small";
   }
- 
+
   return (
     <div>
       <div className={showCaseClass}>
         <div className="project">
           <span className="cursive">Art Showcase</span>
-          <a target="_blank" href="https://www.instagram.com/bikal182/">
-            <img className="artShowcase" src={instagramArt} />
-          </a>
+
+          <img className="artShowcase" src={instagramArt} />
         </div>
         <div className="project">
           <span className="cursive">Truth Duel (Profile UI)</span>

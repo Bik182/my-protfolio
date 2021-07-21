@@ -3,14 +3,13 @@ import { NavLink } from "react-router-dom";
 import bikalLogo from "../media/bikal_header.png";
 import githubLogo from "../media/github-68_x_68.png";
 import linkedinLogo from "../media/linkedin-68_x_68.png";
-import instagramLogo from "../media/instagram-68_x_68.png";
-
+import resumeLogo from "../media/resume.png";
+import resume from "../media/bikal_resume.pdf";
 export default function NavBar(props) {
   let buttonMaxWidth = "68";
   let headerMaxImageWidth = "25";
   let logoMultipler = (1920 / props.screenWidth) * headerMaxImageWidth + "%";
   let buttonMultipler = buttonMaxWidth;
-
 
   return (
     <div className="navBarHeader">
@@ -40,10 +39,11 @@ export default function NavBar(props) {
         >
           <a
             className="social-image"
-            target="_blank"
-            href="https://www.linkedin.com/in/bikal-t-848008127/"
+           
+            download = "bikal_resume.pdf"
+            href={resume}
           >
-            <img alt="linkedin link" src={linkedinLogo}></img>
+            <img alt="resume link" src={resumeLogo}></img>
           </a>
         </div>
         <div
@@ -53,9 +53,9 @@ export default function NavBar(props) {
           <a
             className="social-image"
             target="_blank"
-            href="https://www.instagram.com/bikal182/"
+            href="https://www.linkedin.com/in/bikal-t-848008127/"
           >
-            <img alt="instagram link" src={instagramLogo}></img>
+            <img alt="linkedin link" src={linkedinLogo}></img>
           </a>
         </div>
       </div>

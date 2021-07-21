@@ -44,15 +44,13 @@
   border-radius: 1px;
 }
 .gif-logo{
-  /* align-self: center; */
  
-  
   border-bottom-width: .25em;
   border-color: red;
 }
 .gif-link{
   display: flex;
-  align-items: center;
+  
   justify-content: center;
 }
 .gif-logo {
@@ -69,7 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 2em;
+  padding-top: 10px;
 }
 .img {
   border: 1px solid #ddd;
@@ -86,9 +84,12 @@
 }
 .headerImg {
   height: 25%;
-  /* border-width: 1px;
-  border-color: aqua; */
   width: 25%;
+  transition: transform 0.5s ease;
+}
+.headerImg:hover {
+  transform: scale(1.1);
+
 }
 
 .gifProject {
@@ -132,6 +133,12 @@
 }
 .social-button {
   margin-right: 10px;
+  transition: transform 0.5s ease;
+  
+}
+.social-button:hover {
+  transform: scale(1.1);
+
 }
 .social-image {
   /* border-width: 1px;
