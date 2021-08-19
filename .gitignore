@@ -7,7 +7,7 @@ node_modules
 
 # testing
 /coverage
-
+/src/components/assets
 # production
 /build
 
