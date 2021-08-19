@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import myPicture from "../media/bikal.png";
 import NavBar from "./NavBar";
 import biksGifsLogo from "../media/logo-red.png";
-
+import "./animation.scss";
 export default function Home() {
   const [width, setWindowWidth] = useState(0);
 
@@ -24,7 +24,7 @@ export default function Home() {
   let fontSizeMultiplier = width / 1920;
   let imageMultiplier = 1920 / width;
   let currTODOMaxFontSize = 50 * fontSizeMultiplier;
-  let currDescriptionFontSize = 25 * fontSizeMultiplier;
+  let currDescriptionFontSize = 30 * fontSizeMultiplier;
   let currHeight = 50 + imageMultiplier + "%";
   let currWidth = 25 + imageMultiplier + "%";
   if (currTODOMaxFontSize < 20) {
@@ -37,19 +37,31 @@ export default function Home() {
     <>
       <NavBar screenWidth={width}></NavBar>
       <div className="homeHeader">
-        <div>
-          <div className="gif-logo-container">
-            <a className="gif-link" target="_blank" href="https://biksgifs.com/">
-              <img
-                style={{ width: logoMultipler, height: logoMultipler }}
-                className="gif-logo"
-                alt="biks gifs link"
-                src={biksGifsLogo}
-              ></img>
-            </a>
-          </div>
-          <CarouselProjects screenWidth={width}></CarouselProjects>
+       
+        <div className="gif-logo-container">
+         <header  style={{ fontSize: currDescriptionFontSize + 10, color:"black" }} className="cursive">Side Projects:</header>
+          <a className="gif-link" target="_blank" href="https://biksgifs.com/">
+            <header
+              style={{ fontSize: currDescriptionFontSize + 10, color:"#212529" }}
+              className="cursive"
+            >
+              {" "}
+              <i class="fa fa-external-link" aria-hidden="true"></i> Bik's Gifs
+            </header>
+          </a>
+          <a className="gif-link" target="_blank" href="https://shreejwal.com/">
+            <header
+              style={{ fontSize: currDescriptionFontSize + 10, color:"#212529" }}
+              className="cursive"
+            >
+              {" "}
+              <i class="fa fa-external-link" aria-hidden="true"></i>Photography
+              Portfolio <span className="cursive new-tag"> *New</span>
+            </header>
+          </a>
         </div>
+        <CarouselProjects screenWidth={width}></CarouselProjects>
+
         <div className="bottomHeader">
           <p
             className="description"
