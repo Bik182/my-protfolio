@@ -55,7 +55,7 @@ export default function Home() {
               className="cursive"
             >
               {" "}
-              <i class="fa fa-external-link" aria-hidden="true"></i>Photography
+              <i class="fa fa-external-link" aria-hidden="true"></i> {" "}Photography
               Portfolio <span className="cursive new-tag"> *New</span>
             </header>
           </a>
