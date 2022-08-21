@@ -21,6 +21,7 @@ export default function NavBar(props) {
       ></img>
 
       <div className="social-container">
+      
         <div
           className="social-button"
           style={{ width: buttonMultipler, height: buttonMultipler }}
@@ -28,6 +29,7 @@ export default function NavBar(props) {
           <a
             className="social-image"
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/Bik182"
           >
             <img alt="github link" src={githubLogo}></img>
@@ -37,12 +39,7 @@ export default function NavBar(props) {
           className="social-button"
           style={{ width: buttonMultipler, height: buttonMultipler }}
         >
-          <a
-            className="social-image"
-           
-            download = "bikal_resume.pdf"
-            href={resume}
-          >
+          <a className="social-image" download="bikal_resume.pdf" href={resume}>
             <img alt="resume link" src={resumeLogo}></img>
           </a>
         </div>
